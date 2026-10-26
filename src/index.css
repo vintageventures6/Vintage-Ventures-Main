@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --brand-teal-deep: #091a20;
+  --brand-teal-main: #0d262f;
+  --brand-teal-card: #133440;
+  --brand-teal-elevated: #19404e;
+  --brand-gold: #d4af37;
+  --brand-gold-light: #f5d78a;
+  --brand-gold-dark: #b48e24;
+  --brand-text-muted: #95b8c3;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #0d262f;
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fbf1db 0%, #d4af37 50%, #ad8622 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow {
+  box-shadow: 0 0 30px -5px rgba(212, 175, 55, 0.15);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 35px 0px rgba(212, 175, 55, 0.25);
+}
+
+/* Custom scrollbar matching teal & gold brand */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #091a20;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c4553;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
